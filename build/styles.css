@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'HelveticaNeueLTPro-BdCn';
+	src: url('HelveticaNeueLTPro-BdCn.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'HelveticaNeueLTPro-BdCn', Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+	background-color: #0a0a0a;
+	color: #cdcdcd;
+	overflow: hidden;
+}
+
+.header {
+	border-bottom: 2px solid #000;
+	background-color: #222222;
+	color: #cdcdcd;
+	text-align: center;
+	padding: 7px;
+}
+
+.title {
+	font-size: 24px;
+}
+
+.search-container {
+	display: flex;
+	justify-content: center;
+	padding: 7px;
+}
+
+#search {
+	border: 2px solid #000;
+	min-width: 400px;
+	background-color: #111;
+	color: #cdcdcd;
+	padding: 8px;
+}
+
+#search::placeholder {
+	color: #fff;
+}
+
+.container {
+	display: flex;
+	flex: 1;
+	height: calc(100vh - 60px);
+}
+
+.track-list-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.list-title, .track-item a {
+	padding: 7px;
+}
+
+.list-title {
+	font-size: 20px;
+	background-color: #111;
+}
+
+.track-list {
+	border: 2px solid #000;
+	background-color: #111;
+	overflow-y: auto;
+	flex: 1;
+}
+
+.track-item a {
+	text-decoration: none;
+	color: #cdcdcd;
+	display: block;
+}
+
+.track-item a:hover {
+	background-color: #333;
+}
+
+.song-info {
+	flex: 1;
+	background-color: #111;
+	padding: 7px;
+}
+
+.info-title {
+	font-size: 20px;
+}
+
+.info-text {
+	font-size: 16px;
+}
